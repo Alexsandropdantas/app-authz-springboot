@@ -1,0 +1,3 @@
+org\keycloak\quickstart\springboot\web\ApplicationController.class
+org\keycloak\quickstart\springboot\security\Identity.class
+org\keycloak\quickstart\springboot\MyApplication.class
