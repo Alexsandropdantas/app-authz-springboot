@@ -4,12 +4,21 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+<<<<<<< HEAD
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.6.3</version>
 		<relativePath />
 	</parent>
+=======
+    <parent>
+        <groupId>org.keycloak.quickstarts</groupId>
+        <artifactId>keycloak-quickstart-parent</artifactId>
+        <version>7.4.0.GA</version>
+        <relativePath/>
+    </parent>
+>>>>>>> 6bfe2db79c5d0fe7188d376f908bfd7ad11d4f9f
 
 	<artifactId>app-authz-springboot</artifactId>
 	<name>Spring Boot Web Keycloak Authorization Services Sample</name>
