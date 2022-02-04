@@ -7,7 +7,7 @@
         <groupId>org.keycloak.quickstarts</groupId>
         <artifactId>keycloak-quickstart-parent</artifactId>
         <version>7.4.0.GA</version>
-        <relativePath>../pom.xml</relativePath>
+        <relativePath/>
     </parent>
 
     <artifactId>app-authz-springboot</artifactId>
