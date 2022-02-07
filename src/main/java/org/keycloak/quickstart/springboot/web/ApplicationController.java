@@ -9,14 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 
-/**
- * @author <a href="mailto:psilva@redhat.com">Pedro Igor</a>
- */
 @Controller
 public class ApplicationController implements ErrorController{
 
@@ -30,31 +27,31 @@ public class ApplicationController implements ErrorController{
     @Autowired
     private HttpServletRequest request;
 
-    @RequestMapping(value = "/protected", method = RequestMethod.GET)
+    @GetMapping("/protected")
     public String handleProtected(Model model) {
         configCommonAttributes(model);
         return "protected";
     }
 
-    @RequestMapping(value = "/protected/premium", method = RequestMethod.GET)
+    @GetMapping("/protected/premium")
     public String handlePremium(Model model) {
         configCommonAttributes(model);
         return "premium";
     }
 
-    @RequestMapping(value = "/logout", method = RequestMethod.GET)
+    @GetMapping("/logout")
     public String handleLogoutt() throws ServletException {
         request.logout();
         return "redirect:/";
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @GetMapping("/")
     public String handleHome(Model model) throws ServletException {
         configCommonAttributes(model);
         return "home";
     }
 
-    @RequestMapping(value = "/accessDenied", method = RequestMethod.GET)
+    @GetMapping("/accessDenied")
     public String handleAccessDenied() throws ServletException {
         return "access-denied";
     }

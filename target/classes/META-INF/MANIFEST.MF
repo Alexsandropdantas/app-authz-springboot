@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Implementation-Title: Spring Boot Web Keycloak Authorization Services 
+ Sample
+Implementation-Version: 2.6.3
+Build-Jdk-Spec: 1.8
+Created-By: Maven Integration for Eclipse
+
